@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorprimary"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <soup.neumorphism.NeumorphCardView
+           style="@style/Widget.Neumorph.CardView"
+           android:layout_width="match_parent"
+           app:neumorph_shapeType="pressed"
+           android:layout_margin="20dp"
+           android:layout_height="80dp"/>
+       <soup.neumorphism.NeumorphCardView
+           style="@style/Widget.Neumorph.CardView"
+           android:layout_width="match_parent"
+           app:neumorph_shapeType="basin"
+           android:layout_margin="20dp"
+           android:layout_height="80dp"/>
+       <soup.neumorphism.NeumorphCardView
+           style="@style/Widget.Neumorph.CardView"
+           android:layout_width="match_parent"
+           app:neumorph_shapeType="flat"
+           android:layout_margin="20dp"
+           android:layout_height="80dp"/>
+
+       <soup.neumorphism.NeumorphButton
+           android:text="click"
+           app:neumorph_shapeType="flat"
+           style="@style/Widget.Neumorph.Button"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"/>
+       <soup.neumorphism.NeumorphButton
+           android:text="click"
+           app:neumorph_shapeType="basin"
+           style="@style/Widget.Neumorph.Button"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"/>
+       <soup.neumorphism.NeumorphButton
+           android:id="@+id/click"
+           android:textColor="@color/black"
+           android:text="click"
+           app:neumorph_shapeType="pressed"
+           style="@style/Widget.Neumorph.Button"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"/>
+
+
+   </LinearLayout>
+
+
+</RelativeLayout>
